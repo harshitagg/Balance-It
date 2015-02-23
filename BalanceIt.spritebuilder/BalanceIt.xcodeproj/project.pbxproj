@@ -96,6 +96,7 @@
 		BC5399DC1A44DCC90063F482 /* JavaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D71A44DCC90063F482 /* JavaKit.framework */; };
 		EE52227C1A9AB1E40092E8B2 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = EE52227B1A9AB1E40092E8B2 /* Gameplay.m */; };
 		EE5222801A9AB4510092E8B2 /* Monster.m in Sources */ = {isa = PBXBuildFile; fileRef = EE52227F1A9AB4510092E8B2 /* Monster.m */; };
+		EE5222831A9AD5510092E8B2 /* SpaceShip.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5222821A9AD5510092E8B2 /* SpaceShip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +213,8 @@
 		EE52227B1A9AB1E40092E8B2 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gameplay.m; sourceTree = "<group>"; };
 		EE52227E1A9AB4510092E8B2 /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
 		EE52227F1A9AB4510092E8B2 /* Monster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monster.m; sourceTree = "<group>"; };
+		EE5222811A9AD5510092E8B2 /* SpaceShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceShip.h; sourceTree = "<group>"; };
+		EE5222821A9AD5510092E8B2 /* SpaceShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceShip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,6 +445,8 @@
 				D352B48019EC608A00829775 /* MetalShaders */,
 				EE52227A1A9AB1E40092E8B2 /* Gameplay.h */,
 				EE52227B1A9AB1E40092E8B2 /* Gameplay.m */,
+				EE5222811A9AD5510092E8B2 /* SpaceShip.h */,
+				EE5222821A9AD5510092E8B2 /* SpaceShip.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -813,6 +818,7 @@
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
 				EE5222801A9AB4510092E8B2 /* Monster.m in Sources */,
+				EE5222831A9AD5510092E8B2 /* SpaceShip.m in Sources */,
 				EE52227C1A9AB1E40092E8B2 /* Gameplay.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,

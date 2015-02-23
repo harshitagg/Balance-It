@@ -165,7 +165,7 @@
 					<key>value</key>
 					<array>
 						<real>73.268341064453125</real>
-						<real>60.258766174316406</real>
+						<real>63.826179504394531</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -274,7 +274,7 @@
 					<key>value</key>
 					<array>
 						<real>239</real>
-						<real>56.777957916259766</real>
+						<real>58.558231353759766</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -601,7 +601,7 @@
 					<key>value</key>
 					<array>
 						<real>69.268341064453125</real>
-						<real>179.99781799316406</real>
+						<real>183.56523132324219</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -682,7 +682,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>170.81008911132812</real>
+						<real>170.8160400390625</real>
 						<false/>
 					</array>
 				</dict>
@@ -693,7 +693,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>170.81008911132812</real>
+						<real>170.8160400390625</real>
 						<false/>
 					</array>
 				</dict>
@@ -847,7 +847,7 @@
 					<key>value</key>
 					<array>
 						<real>235</real>
-						<real>188.87167358398438</real>
+						<real>190.65194702148438</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -928,7 +928,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>106.00009155273438</real>
+						<real>106.01741027832031</real>
 						<false/>
 					</array>
 				</dict>
@@ -939,7 +939,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>106.00009155273438</real>
+						<real>106.01741027832031</real>
 						<false/>
 					</array>
 				</dict>
@@ -970,7 +970,7 @@
 					<key>value</key>
 					<array>
 						<real>70.268341064453125</real>
-						<real>183.57211303710938</real>
+						<real>187.1395263671875</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -1051,7 +1051,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>434.46435546875</real>
+						<real>434.47119140625</real>
 						<false/>
 					</array>
 				</dict>
@@ -1062,7 +1062,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>434.46435546875</real>
+						<real>434.47119140625</real>
 						<false/>
 					</array>
 				</dict>
@@ -1093,7 +1093,7 @@
 					<key>value</key>
 					<array>
 						<real>69.268341064453125</real>
-						<real>181.78497314453125</real>
+						<real>185.35238647460938</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -1174,7 +1174,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>445.68917846679688</real>
+						<real>446.636474609375</real>
 						<false/>
 					</array>
 				</dict>
@@ -1185,7 +1185,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>445.68917846679688</real>
+						<real>446.636474609375</real>
 						<false/>
 					</array>
 				</dict>
@@ -2426,7 +2426,7 @@
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
-							<real>1</real>
+							<real>2</real>
 							<key>dynamic</key>
 							<true/>
 							<key>elasticity</key>
@@ -2667,7 +2667,7 @@
 								<key>value</key>
 								<array>
 									<real>237.0557861328125</real>
-									<real>136.26348876953125</real>
+									<real>138.04376220703125</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2840,7 +2840,7 @@
 								<key>value</key>
 								<array>
 									<real>71.5013427734375</real>
-									<real>136.26348876953125</real>
+									<real>139.83090209960938</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
