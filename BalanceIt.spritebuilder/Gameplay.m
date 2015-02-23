@@ -19,7 +19,7 @@
 - (void)didLoadFromCCB {
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
-    _objectsArray = [[NSArray alloc] initWithObjects:@"Monster", @"SpaceShip", nil];
+    _objectsArray = [[NSArray alloc] initWithObjects:@"Monster", @"SpaceShip", @"Donut", nil];
 }
 
 // called on every touch in this scene

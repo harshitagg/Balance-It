@@ -40,7 +40,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>Monster</string>
+		<string>Donut</string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -62,20 +62,20 @@
 			<key>collisionType</key>
 			<string></string>
 			<key>cornerRadius</key>
-			<real>30</real>
+			<real>32.5</real>
 			<key>density</key>
-			<real>10</real>
+			<real>0.5</real>
 			<key>dynamic</key>
 			<true/>
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
-			<real>0.5</real>
+			<real>0.30000001192092896</real>
 			<key>points</key>
 			<array>
 				<array>
-					<real>62.5</real>
-					<real>62.5</real>
+					<real>32.5</real>
+					<real>32</real>
 				</array>
 			</array>
 			<key>polygons</key>
@@ -137,7 +137,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>BalanceItAssets/character_monsters/Type 2.png</string>
+					<string>BalanceItAssets/object_donuts/Donut-1.png</string>
 				</array>
 			</dict>
 			<dict>

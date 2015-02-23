@@ -1174,7 +1174,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>446.636474609375</real>
+						<real>446.63650512695312</real>
 						<false/>
 					</array>
 				</dict>
@@ -1185,11 +1185,13 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>446.636474609375</real>
+						<real>446.63650512695312</real>
 						<false/>
 					</array>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -2426,7 +2428,7 @@
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
-							<real>2</real>
+							<real>70</real>
 							<key>dynamic</key>
 							<true/>
 							<key>elasticity</key>
@@ -2566,8 +2568,6 @@
 								<array/>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -3646,9 +3646,9 @@
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>1.71875</real>
+			<real>0.033333335071802139</real>
 			<key>position</key>
-			<real>10</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

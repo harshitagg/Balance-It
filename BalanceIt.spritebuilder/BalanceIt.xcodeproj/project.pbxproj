@@ -97,6 +97,7 @@
 		EE52227C1A9AB1E40092E8B2 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = EE52227B1A9AB1E40092E8B2 /* Gameplay.m */; };
 		EE5222801A9AB4510092E8B2 /* Monster.m in Sources */ = {isa = PBXBuildFile; fileRef = EE52227F1A9AB4510092E8B2 /* Monster.m */; };
 		EE5222831A9AD5510092E8B2 /* SpaceShip.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5222821A9AD5510092E8B2 /* SpaceShip.m */; };
+		EE5222861A9ADDA20092E8B2 /* Donut.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5222851A9ADDA20092E8B2 /* Donut.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +216,8 @@
 		EE52227F1A9AB4510092E8B2 /* Monster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monster.m; sourceTree = "<group>"; };
 		EE5222811A9AD5510092E8B2 /* SpaceShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceShip.h; sourceTree = "<group>"; };
 		EE5222821A9AD5510092E8B2 /* SpaceShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceShip.m; sourceTree = "<group>"; };
+		EE5222841A9ADDA20092E8B2 /* Donut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Donut.h; sourceTree = "<group>"; };
+		EE5222851A9ADDA20092E8B2 /* Donut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Donut.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -447,6 +450,8 @@
 				EE52227B1A9AB1E40092E8B2 /* Gameplay.m */,
 				EE5222811A9AD5510092E8B2 /* SpaceShip.h */,
 				EE5222821A9AD5510092E8B2 /* SpaceShip.m */,
+				EE5222841A9ADDA20092E8B2 /* Donut.h */,
+				EE5222851A9ADDA20092E8B2 /* Donut.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -817,6 +822,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
+				EE5222861A9ADDA20092E8B2 /* Donut.m in Sources */,
 				EE5222801A9AB4510092E8B2 /* Monster.m in Sources */,
 				EE5222831A9AD5510092E8B2 /* SpaceShip.m in Sources */,
 				EE52227C1A9AB1E40092E8B2 /* Gameplay.m in Sources */,
