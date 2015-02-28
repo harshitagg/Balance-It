@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-#import "CCSprite.h"
+#import "Sprite.h"
 
-@interface SpaceShip : CCSprite
+@interface SpaceShip : Sprite
 
 @end

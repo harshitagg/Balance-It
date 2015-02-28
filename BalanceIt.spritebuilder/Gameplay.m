@@ -20,6 +20,8 @@
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     _objectsArray = [[NSArray alloc] initWithObjects:@"Monster", @"SpaceShip", @"Donut", nil];
+    _physicsNode.collisionDelegate = self;
+   // _physicsNode.debugDraw = YES;
 }
 
 // called on every touch in this scene
@@ -31,6 +33,7 @@
 - (void)launchMonster:(CGPoint)touchLocation {
     NSUInteger randomNumber = arc4random_uniform((unsigned int) _objectsArray.count);
     CCNode* object = [CCBReader load:_objectsArray[randomNumber]];
+    object.scale = 0.5;
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     if (touchLocation.x > winSize.width/2) {
         object.position = _rightLaunchNode.position;
@@ -46,6 +49,18 @@
     CGPoint launchDirection = ccp(0, 0);
     CGPoint force = ccpMult(launchDirection, 8000);
     [object.physicsBody applyForce:force];
+}
+
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+    //Set kinetic energy as zero
+}
+
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wall:(CCNode *)nodeB {
+    [self spriteRemoved:nodeA];
+}
+
+- (void)spriteRemoved:(CCNode *)sprite {
+    [sprite removeFromParent];
 }
 
 @end

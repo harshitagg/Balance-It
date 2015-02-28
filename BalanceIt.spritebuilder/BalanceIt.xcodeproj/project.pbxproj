@@ -98,6 +98,12 @@
 		EE5222801A9AB4510092E8B2 /* Monster.m in Sources */ = {isa = PBXBuildFile; fileRef = EE52227F1A9AB4510092E8B2 /* Monster.m */; };
 		EE5222831A9AD5510092E8B2 /* SpaceShip.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5222821A9AD5510092E8B2 /* SpaceShip.m */; };
 		EE5222861A9ADDA20092E8B2 /* Donut.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5222851A9ADDA20092E8B2 /* Donut.m */; };
+		EEBA2F871AA25E7800EFE84C /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F861AA25E7800EFE84C /* Sprite.m */; };
+		EEBA2F8B1AA2661700EFE84C /* Wall.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F8A1AA2661700EFE84C /* Wall.m */; };
+		EEBA2F8E1AA26A1600EFE84C /* LeftWall.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F8D1AA26A1600EFE84C /* LeftWall.m */; };
+		EEBA2F911AA26A2600EFE84C /* RightWall.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F901AA26A2600EFE84C /* RightWall.m */; };
+		EEBA2F941AA26F4E00EFE84C /* MidWall.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F931AA26F4E00EFE84C /* MidWall.m */; };
+		EEBA2F971AA274EA00EFE84C /* FrontWall.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F961AA274EA00EFE84C /* FrontWall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +224,18 @@
 		EE5222821A9AD5510092E8B2 /* SpaceShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceShip.m; sourceTree = "<group>"; };
 		EE5222841A9ADDA20092E8B2 /* Donut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Donut.h; sourceTree = "<group>"; };
 		EE5222851A9ADDA20092E8B2 /* Donut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Donut.m; sourceTree = "<group>"; };
+		EEBA2F851AA25E7800EFE84C /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		EEBA2F861AA25E7800EFE84C /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
+		EEBA2F891AA2661700EFE84C /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wall.h; sourceTree = "<group>"; };
+		EEBA2F8A1AA2661700EFE84C /* Wall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wall.m; sourceTree = "<group>"; };
+		EEBA2F8C1AA26A1600EFE84C /* LeftWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftWall.h; sourceTree = "<group>"; };
+		EEBA2F8D1AA26A1600EFE84C /* LeftWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftWall.m; sourceTree = "<group>"; };
+		EEBA2F8F1AA26A2600EFE84C /* RightWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightWall.h; sourceTree = "<group>"; };
+		EEBA2F901AA26A2600EFE84C /* RightWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightWall.m; sourceTree = "<group>"; };
+		EEBA2F921AA26F4E00EFE84C /* MidWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidWall.h; sourceTree = "<group>"; };
+		EEBA2F931AA26F4E00EFE84C /* MidWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidWall.m; sourceTree = "<group>"; };
+		EEBA2F951AA274EA00EFE84C /* FrontWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontWall.h; sourceTree = "<group>"; };
+		EEBA2F961AA274EA00EFE84C /* FrontWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontWall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -448,10 +466,22 @@
 				D352B48019EC608A00829775 /* MetalShaders */,
 				EE52227A1A9AB1E40092E8B2 /* Gameplay.h */,
 				EE52227B1A9AB1E40092E8B2 /* Gameplay.m */,
+				EEBA2F951AA274EA00EFE84C /* FrontWall.h */,
+				EEBA2F961AA274EA00EFE84C /* FrontWall.m */,
+				EEBA2F891AA2661700EFE84C /* Wall.h */,
+				EEBA2F8A1AA2661700EFE84C /* Wall.m */,
 				EE5222811A9AD5510092E8B2 /* SpaceShip.h */,
 				EE5222821A9AD5510092E8B2 /* SpaceShip.m */,
 				EE5222841A9ADDA20092E8B2 /* Donut.h */,
 				EE5222851A9ADDA20092E8B2 /* Donut.m */,
+				EEBA2F851AA25E7800EFE84C /* Sprite.h */,
+				EEBA2F861AA25E7800EFE84C /* Sprite.m */,
+				EEBA2F8C1AA26A1600EFE84C /* LeftWall.h */,
+				EEBA2F8D1AA26A1600EFE84C /* LeftWall.m */,
+				EEBA2F8F1AA26A2600EFE84C /* RightWall.h */,
+				EEBA2F901AA26A2600EFE84C /* RightWall.m */,
+				EEBA2F921AA26F4E00EFE84C /* MidWall.h */,
+				EEBA2F931AA26F4E00EFE84C /* MidWall.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -821,8 +851,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBA2F8E1AA26A1600EFE84C /* LeftWall.m in Sources */,
+				EEBA2F911AA26A2600EFE84C /* RightWall.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				EEBA2F971AA274EA00EFE84C /* FrontWall.m in Sources */,
 				EE5222861A9ADDA20092E8B2 /* Donut.m in Sources */,
+				EEBA2F8B1AA2661700EFE84C /* Wall.m in Sources */,
+				EEBA2F871AA25E7800EFE84C /* Sprite.m in Sources */,
+				EEBA2F941AA26F4E00EFE84C /* MidWall.m in Sources */,
 				EE5222801A9AB4510092E8B2 /* Monster.m in Sources */,
 				EE5222831A9AD5510092E8B2 /* SpaceShip.m in Sources */,
 				EE52227C1A9AB1E40092E8B2 /* Gameplay.m in Sources */,
