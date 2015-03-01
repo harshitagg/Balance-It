@@ -47,15 +47,15 @@
     
     // manually create & apply a force to launch the penguin
     CGPoint launchDirection = ccp(0, 0);
-    CGPoint force = ccpMult(launchDirection, 8000);
+    CGPoint force = ccpMult(launchDirection, 0);
     [object.physicsBody applyForce:force];
 }
 
--(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
     //Set kinetic energy as zero
 }
 
--(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wall:(CCNode *)nodeB {
+- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wall:(CCNode *)nodeB {
     [self spriteRemoved:nodeA];
 }
 
@@ -63,7 +63,7 @@
     [sprite removeFromParent];
 }
 
--(void)retry {
+- (void)retry {
     // reload this level
     [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay"]];
 }
