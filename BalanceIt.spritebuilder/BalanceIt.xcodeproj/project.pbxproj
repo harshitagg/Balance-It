@@ -104,6 +104,7 @@
 		EEBA2F911AA26A2600EFE84C /* RightWall.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F901AA26A2600EFE84C /* RightWall.m */; };
 		EEBA2F941AA26F4E00EFE84C /* MidWall.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F931AA26F4E00EFE84C /* MidWall.m */; };
 		EEBA2F971AA274EA00EFE84C /* FrontWall.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F961AA274EA00EFE84C /* FrontWall.m */; };
+		EEBA2F9A1AA2CA8C00EFE84C /* Frog.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F991AA2CA8C00EFE84C /* Frog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +237,8 @@
 		EEBA2F931AA26F4E00EFE84C /* MidWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidWall.m; sourceTree = "<group>"; };
 		EEBA2F951AA274EA00EFE84C /* FrontWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontWall.h; sourceTree = "<group>"; };
 		EEBA2F961AA274EA00EFE84C /* FrontWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontWall.m; sourceTree = "<group>"; };
+		EEBA2F981AA2CA8C00EFE84C /* Frog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frog.h; sourceTree = "<group>"; };
+		EEBA2F991AA2CA8C00EFE84C /* Frog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -482,6 +485,8 @@
 				EEBA2F901AA26A2600EFE84C /* RightWall.m */,
 				EEBA2F921AA26F4E00EFE84C /* MidWall.h */,
 				EEBA2F931AA26F4E00EFE84C /* MidWall.m */,
+				EEBA2F981AA2CA8C00EFE84C /* Frog.h */,
+				EEBA2F991AA2CA8C00EFE84C /* Frog.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -860,6 +865,7 @@
 				EEBA2F871AA25E7800EFE84C /* Sprite.m in Sources */,
 				EEBA2F941AA26F4E00EFE84C /* MidWall.m in Sources */,
 				EE5222801A9AB4510092E8B2 /* Monster.m in Sources */,
+				EEBA2F9A1AA2CA8C00EFE84C /* Frog.m in Sources */,
 				EE5222831A9AD5510092E8B2 /* SpaceShip.m in Sources */,
 				EE52227C1A9AB1E40092E8B2 /* Gameplay.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,
