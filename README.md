@@ -87,3 +87,6 @@ he/she has reached in the game.
 
 ### Week 6
 * User feedback, testing and polishing
+
+## PM notes by Sohil
+* Zero-out the momentum of the falling objects
