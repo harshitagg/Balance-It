@@ -73,11 +73,12 @@ he/she has reached in the game.
 * Balance movement
 
 ### Week 3
+* Need to implement timer
 * Finish and polish balance movement
-* Level design
 * Scoring
 
 ### Week 4
+* Level design
 * Refine levels -- playtest even more often!!
 * Refine control scheme
 
