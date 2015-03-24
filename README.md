@@ -90,4 +90,5 @@ he/she has reached in the game.
 * User feedback, testing and polishing
 
 ## PM notes by Sohil
-* Zero-out the momentum of the falling objects
+* Implement timer
+* Moved level design to the next week
