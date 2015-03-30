@@ -12,16 +12,29 @@
     CCPhysicsNode *_physicsNode;
     CCNode *_leftLaunchNode;
     CCNode *_rightLaunchNode;
+    CCNode *_rightLevelMarker;
     NSArray *_objectsArray;
+    CCNode *_lever;
+    
+    CCLabelTTF *_timerLabel;
+    int _timer;
+    SEL _decrementSelector;
+    BOOL _isScheduled;
 }
 
 // is called when CCB file has completed loading
 - (void)didLoadFromCCB {
+    _timer = 10;
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     _objectsArray = [[NSArray alloc] initWithObjects:@"Monster", @"SpaceShip", @"Donut", @"Frog", nil];
     _physicsNode.collisionDelegate = self;
    // _physicsNode.debugDraw = YES;
+    
+    _decrementSelector = @selector(decrement);
+    [self schedule:_decrementSelector interval:1.0];
+    [_timerLabel setString:[NSString stringWithFormat:@"%d", _timer]];
+    _isScheduled = true;
 }
 
 // called on every touch in this scene
@@ -51,6 +64,30 @@
     [object.physicsBody applyForce:force];
 }
 
+- (void)update:(CCTime)delta {
+    if (_timer == 0 && _isScheduled) {
+        [_timerLabel setString:[NSString stringWithFormat:@"%d", _timer]];
+        [self unschedule:_decrementSelector];
+        _isScheduled = false;
+        
+
+    }
+    float f = _lever.positionInPoints.x;
+    CCLOG(@"-----%f", _lever.positionInPoints.y);
+    CGPoint topRight = ccp(f + _lever.contentSize.width, _lever.positionInPoints.y + _lever.contentSize.height);
+    //CGPoint topRightWorldLever = [self convertToNodeSpace:[self convertToWorldSpace:topRight]];
+    CGPoint topRightWorldLever = [_rightLevelMarker convertToWorldSpace:topRight];
+    CCLOG(@"%f", topRightWorldLever.y);
+    
+    CGPoint topRightMarker = ccp(_rightLevelMarker.positionInPoints.x + _rightLevelMarker.contentSize.width, _rightLevelMarker.positionInPoints.y + _rightLevelMarker.contentSize.height);
+    CGPoint topRightWorldMarker = [_rightLevelMarker convertToWorldSpace:topRightMarker];
+    CCLOG(@"%f", topRightWorldMarker.y);
+    
+    CGPoint bottomRightMarker = ccp(_rightLevelMarker.positionInPoints.x + _rightLevelMarker.contentSize.width, _rightLevelMarker.positionInPoints.y);
+    CGPoint bottomRightWorldMarker = [_rightLevelMarker convertToWorldSpace:bottomRightMarker];
+    CCLOG(@"%f", bottomRightWorldMarker.y);
+}
+
 - (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
     //Set kinetic energy as zero
 }
@@ -66,6 +103,10 @@
 - (void)retry {
     // reload this level
     [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay"]];
+}
+
+- (void)decrement {
+    [_timerLabel setString:[NSString stringWithFormat:@"%d", _timer--]];
 }
 
 @end
