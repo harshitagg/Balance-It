@@ -69,27 +69,25 @@
         [_timerLabel setString:[NSString stringWithFormat:@"%d", _timer]];
         [self unschedule:_decrementSelector];
         _isScheduled = false;
-        
-
     }
-    float f = _lever.positionInPoints.x;
-    CCLOG(@"-----%f", _lever.positionInPoints.y);
-    CGPoint topRight = ccp(f + _lever.contentSize.width, _lever.positionInPoints.y + _lever.contentSize.height);
-    //CGPoint topRightWorldLever = [self convertToNodeSpace:[self convertToWorldSpace:topRight]];
-    CGPoint topRightWorldLever = [_rightLevelMarker convertToWorldSpace:topRight];
-    CCLOG(@"%f", topRightWorldLever.y);
     
-    CGPoint topRightMarker = ccp(_rightLevelMarker.positionInPoints.x + _rightLevelMarker.contentSize.width, _rightLevelMarker.positionInPoints.y + _rightLevelMarker.contentSize.height);
-    CGPoint topRightWorldMarker = [_rightLevelMarker convertToWorldSpace:topRightMarker];
+    CGPoint topRight = ccp(_lever.contentSize.width/2, 0);
+    CGPoint topRightWorldLever = [_lever convertToWorldSpaceAR:topRight];
+    CCLOG(@"top right %f", topRightWorldLever.y);
+    
+    CGPoint topRightMarker = ccp(_rightLevelMarker.contentSize.width/2, _rightLevelMarker.contentSize.height/2);
+    CGPoint topRightWorldMarker = [_rightLevelMarker convertToWorldSpaceAR:topRightMarker];
     CCLOG(@"%f", topRightWorldMarker.y);
     
-    CGPoint bottomRightMarker = ccp(_rightLevelMarker.positionInPoints.x + _rightLevelMarker.contentSize.width, _rightLevelMarker.positionInPoints.y);
-    CGPoint bottomRightWorldMarker = [_rightLevelMarker convertToWorldSpace:bottomRightMarker];
+    CGPoint bottomRightMarker = ccp(_rightLevelMarker.contentSize.width/2, -_rightLevelMarker.contentSize.height/2);
+    CGPoint bottomRightWorldMarker = [_rightLevelMarker convertToWorldSpaceAR:bottomRightMarker];
     CCLOG(@"%f", bottomRightWorldMarker.y);
 }
 
-- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
-    //Set kinetic energy as zero
+- (BOOL)ccPhysicsCollisionPreSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+    //nodeA.physicsBody.velocity = ccp(0,0);
+    //nodeB.physicsBody.elasticity = 0;
+    return true;
 }
 
 - (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wall:(CCNode *)nodeB {
