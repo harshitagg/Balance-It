@@ -98,6 +98,7 @@
 		EE5222801A9AB4510092E8B2 /* Monster.m in Sources */ = {isa = PBXBuildFile; fileRef = EE52227F1A9AB4510092E8B2 /* Monster.m */; };
 		EE5222831A9AD5510092E8B2 /* SpaceShip.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5222821A9AD5510092E8B2 /* SpaceShip.m */; };
 		EE5222861A9ADDA20092E8B2 /* Donut.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5222851A9ADDA20092E8B2 /* Donut.m */; };
+		EE61AB841AD86CFA006B85A1 /* WinPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61AB831AD86CFA006B85A1 /* WinPopup.m */; };
 		EEBA2F871AA25E7800EFE84C /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F861AA25E7800EFE84C /* Sprite.m */; };
 		EEBA2F8B1AA2661700EFE84C /* Wall.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F8A1AA2661700EFE84C /* Wall.m */; };
 		EEBA2F8E1AA26A1600EFE84C /* LeftWall.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F8D1AA26A1600EFE84C /* LeftWall.m */; };
@@ -225,6 +226,8 @@
 		EE5222821A9AD5510092E8B2 /* SpaceShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceShip.m; sourceTree = "<group>"; };
 		EE5222841A9ADDA20092E8B2 /* Donut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Donut.h; sourceTree = "<group>"; };
 		EE5222851A9ADDA20092E8B2 /* Donut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Donut.m; sourceTree = "<group>"; };
+		EE61AB821AD86CFA006B85A1 /* WinPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinPopup.h; sourceTree = "<group>"; };
+		EE61AB831AD86CFA006B85A1 /* WinPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinPopup.m; sourceTree = "<group>"; };
 		EEBA2F851AA25E7800EFE84C /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
 		EEBA2F861AA25E7800EFE84C /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
 		EEBA2F891AA2661700EFE84C /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wall.h; sourceTree = "<group>"; };
@@ -469,6 +472,8 @@
 				D352B48019EC608A00829775 /* MetalShaders */,
 				EE52227A1A9AB1E40092E8B2 /* Gameplay.h */,
 				EE52227B1A9AB1E40092E8B2 /* Gameplay.m */,
+				EE61AB821AD86CFA006B85A1 /* WinPopup.h */,
+				EE61AB831AD86CFA006B85A1 /* WinPopup.m */,
 				EEBA2F951AA274EA00EFE84C /* FrontWall.h */,
 				EEBA2F961AA274EA00EFE84C /* FrontWall.m */,
 				EEBA2F891AA2661700EFE84C /* Wall.h */,
@@ -862,6 +867,7 @@
 				EEBA2F971AA274EA00EFE84C /* FrontWall.m in Sources */,
 				EE5222861A9ADDA20092E8B2 /* Donut.m in Sources */,
 				EEBA2F8B1AA2661700EFE84C /* Wall.m in Sources */,
+				EE61AB841AD86CFA006B85A1 /* WinPopup.m in Sources */,
 				EEBA2F871AA25E7800EFE84C /* Sprite.m in Sources */,
 				EEBA2F941AA26F4E00EFE84C /* MidWall.m in Sources */,
 				EE5222801A9AB4510092E8B2 /* Monster.m in Sources */,

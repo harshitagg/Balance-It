@@ -7,6 +7,7 @@
 //
 
 #import "Gameplay.h"
+#import "WinPopup.h"
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
@@ -18,6 +19,7 @@
     
     CCLabelTTF *_timerLabel;
     int _timer;
+    int _spriteCount;
     SEL _decrementSelector;
     BOOL _isScheduled;
 }
@@ -35,12 +37,16 @@
     [self schedule:_decrementSelector interval:1.0];
     [_timerLabel setString:[NSString stringWithFormat:@"%d", _timer]];
     _isScheduled = true;
+    _spriteCount = 0;
 }
 
 // called on every touch in this scene
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
     CGPoint touchLocation = [touch locationInNode:self];
-    [self launchMonster:touchLocation];
+    if (_isScheduled) {
+        _spriteCount++;
+        [self launchMonster:touchLocation];
+    }
 }
 
 - (void)launchMonster:(CGPoint)touchLocation {
@@ -69,19 +75,29 @@
         [_timerLabel setString:[NSString stringWithFormat:@"%d", _timer]];
         [self unschedule:_decrementSelector];
         _isScheduled = false;
+        
+        CGPoint leverCorner = ccp(_lever.contentSize.width/2, 0);
+        leverCorner = [_lever convertToWorldSpaceAR:leverCorner];
+        
+        CGPoint topCornerRightMarker = ccp(_rightLevelMarker.contentSize.width/2, _rightLevelMarker.contentSize.height/2);
+        topCornerRightMarker = [_rightLevelMarker convertToWorldSpaceAR:topCornerRightMarker];
+        
+        CGPoint bottomCornerRightMarker = ccp(_rightLevelMarker.contentSize.width/2, -_rightLevelMarker.contentSize.height/2);
+        bottomCornerRightMarker = [_rightLevelMarker convertToWorldSpaceAR:bottomCornerRightMarker];
+        
+        [self setPaused:TRUE];
+        if ((leverCorner.y - 10) >= bottomCornerRightMarker.y && (leverCorner.y + 10) <= topCornerRightMarker.y) {
+            CCLOG(@"You Win!! :)");
+            WinPopup *popup = (WinPopup *)[CCBReader load:@"WinPopup" owner:self];
+            popup.positionType = CCPositionTypeNormalized;
+            popup.position = ccp(0.5, 0.5);
+            [popup setScore:_spriteCount];
+            [self addChild:popup];
+        } else {
+            CCLOG(@"You loose!! :(");
+        }
+
     }
-    
-    CGPoint topRight = ccp(_lever.contentSize.width/2, 0);
-    CGPoint topRightWorldLever = [_lever convertToWorldSpaceAR:topRight];
-    CCLOG(@"top right %f", topRightWorldLever.y);
-    
-    CGPoint topRightMarker = ccp(_rightLevelMarker.contentSize.width/2, _rightLevelMarker.contentSize.height/2);
-    CGPoint topRightWorldMarker = [_rightLevelMarker convertToWorldSpaceAR:topRightMarker];
-    CCLOG(@"%f", topRightWorldMarker.y);
-    
-    CGPoint bottomRightMarker = ccp(_rightLevelMarker.contentSize.width/2, -_rightLevelMarker.contentSize.height/2);
-    CGPoint bottomRightWorldMarker = [_rightLevelMarker convertToWorldSpaceAR:bottomRightMarker];
-    CCLOG(@"%f", bottomRightWorldMarker.y);
 }
 
 - (BOOL)ccPhysicsCollisionPreSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
