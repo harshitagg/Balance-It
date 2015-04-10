@@ -8,6 +8,7 @@
 
 #import "Gameplay.h"
 #import "WinPopup.h"
+#import "LoosePopUp.h"
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
@@ -75,16 +76,16 @@
         [_timerLabel setString:[NSString stringWithFormat:@"%d", _timer]];
         [self unschedule:_decrementSelector];
         _isScheduled = false;
-        
+
         CGPoint leverCorner = ccp(_lever.contentSize.width/2, 0);
         leverCorner = [_lever convertToWorldSpaceAR:leverCorner];
-        
+
         CGPoint topCornerRightMarker = ccp(_rightLevelMarker.contentSize.width/2, _rightLevelMarker.contentSize.height/2);
         topCornerRightMarker = [_rightLevelMarker convertToWorldSpaceAR:topCornerRightMarker];
-        
+
         CGPoint bottomCornerRightMarker = ccp(_rightLevelMarker.contentSize.width/2, -_rightLevelMarker.contentSize.height/2);
         bottomCornerRightMarker = [_rightLevelMarker convertToWorldSpaceAR:bottomCornerRightMarker];
-        
+
         [self setPaused:TRUE];
         if ((leverCorner.y - 10) >= bottomCornerRightMarker.y && (leverCorner.y + 10) <= topCornerRightMarker.y) {
             CCLOG(@"You Win!! :)");
@@ -95,6 +96,10 @@
             [self addChild:popup];
         } else {
             CCLOG(@"You loose!! :(");
+            LoosePopUp *popup = (LoosePopUp *)[CCBReader load:@"LoosePopup" owner:self];
+            popup.positionType = CCPositionTypeNormalized;
+            popup.position = ccp(0.5, 0.5);
+            [self addChild:popup];
         }
 
     }
