@@ -87,7 +87,7 @@
         bottomCornerRightMarker = [_rightLevelMarker convertToWorldSpaceAR:bottomCornerRightMarker];
 
         [self setPaused:TRUE];
-        if ((leverCorner.y - 10) >= bottomCornerRightMarker.y && (leverCorner.y + 10) <= topCornerRightMarker.y) {
+        if ((leverCorner.y - 10) >= bottomCornerRightMarker.y && (leverCorner.y + 10) <= topCornerRightMarker.y && _spriteCount > 1) {
             CCLOG(@"You Win!! :)");
             WinPopup *popup = (WinPopup *)[CCBReader load:@"WinPopup" owner:self];
             popup.positionType = CCPositionTypeNormalized;
@@ -101,7 +101,6 @@
             popup.position = ccp(0.5, 0.5);
             [self addChild:popup];
         }
-
     }
 }
 
