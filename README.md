@@ -78,13 +78,15 @@ he/she has reached in the game.
 * Scoring
 
 ### Week 4
-* Level design
-* Refine levels -- playtest even more often!!
+* Playtest even more often!!
 * Refine control scheme
 
 ### Week 5
+* Refine levels
+* Level design
 * Level select scene
-* Determine what other polish is needed
+* Work on poster
+* Practice pitch
 
 ### Week 6
 * User feedback, testing and polishing
