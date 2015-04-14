@@ -92,7 +92,6 @@ he/she has reached in the game.
 * User feedback, testing and polishing
 
 ## PM notes by Sohil
-* Same as last week's as Harshit is stuck with level completion logic
-* Discuss issue with course TAs
-* Scoring should be done
-* Win/Loss detection
+* Moved the Level design to next week for designing new levels
+* Work on Poster
+* Practice pitch
