@@ -27,7 +27,7 @@
 
 // is called when CCB file has completed loading
 - (void)didLoadFromCCB {
-    _timer = 10;
+    _timer = 30;
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     _objectsArray = [[NSArray alloc] initWithObjects:@"Monster", @"SpaceShip", @"Donut", @"Frog", nil];
