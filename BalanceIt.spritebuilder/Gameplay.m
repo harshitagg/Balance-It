@@ -9,12 +9,15 @@
 #import "Gameplay.h"
 #import "WinPopup.h"
 #import "LoosePopUp.h"
+#import "Level.h"
+
+static NSString * const kFirstLevel = @"Level1";
+static NSString *selectedLevel = @"Level1";
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
     CCNode *_leftLaunchNode;
     CCNode *_rightLaunchNode;
-    CCNode *_rightLevelMarker;
     NSArray *_objectsArray;
     CCNode *_lever;
     
@@ -23,6 +26,9 @@
     int _spriteCount;
     SEL _decrementSelector;
     BOOL _isScheduled;
+    
+    CCNode *_levelNode;
+    Level *_loadedLevel;
 }
 
 // is called when CCB file has completed loading
@@ -32,6 +38,8 @@
     self.userInteractionEnabled = TRUE;
     _objectsArray = [[NSArray alloc] initWithObjects:@"Monster", @"SpaceShip", @"Donut", @"Frog", nil];
     _physicsNode.collisionDelegate = self;
+    _loadedLevel = (Level *) [CCBReader load:selectedLevel owner:self];
+    [_levelNode addChild:_loadedLevel];
    // _physicsNode.debugDraw = YES;
     
     _decrementSelector = @selector(decrement);
@@ -80,6 +88,7 @@
         CGPoint leverCorner = ccp(_lever.contentSize.width/2, 0);
         leverCorner = [_lever convertToWorldSpaceAR:leverCorner];
 
+        CCNode *_rightLevelMarker = [_loadedLevel getRightLevelMarker];
         CGPoint topCornerRightMarker = ccp(_rightLevelMarker.contentSize.width/2, _rightLevelMarker.contentSize.height/2);
         topCornerRightMarker = [_rightLevelMarker convertToWorldSpaceAR:topCornerRightMarker];
 
