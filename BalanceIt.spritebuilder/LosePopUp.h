@@ -1,5 +1,5 @@
 //
-//  LoosePopUp.h
+//  LosePopUp.h
 //  BalanceIt
 //
 //  Created by Harshit Agarwal on 4/10/15.
@@ -8,6 +8,6 @@
 
 #import "CCNode.h"
 
-@interface LoosePopUp : CCNode
+@interface LosePopUp : CCNode
 
 @end

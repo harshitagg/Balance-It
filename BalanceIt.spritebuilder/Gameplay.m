@@ -8,7 +8,7 @@
 
 #import "Gameplay.h"
 #import "WinPopup.h"
-#import "LoosePopUp.h"
+#import "LosePopUp.h"
 #import "Level.h"
 
 static NSString * const kFirstLevel = @"Level1";
@@ -120,8 +120,8 @@ static NSString *selectedLevel = @"Level1";
             [popup setScore:_spriteCount];
             [self addChild:popup];
         } else {
-            CCLOG(@"You loose!! :(");
-            LoosePopUp *popup = (LoosePopUp *)[CCBReader load:@"LoosePopup" owner:self];
+            CCLOG(@"You lose!! :(");
+            LosePopUp *popup = (LosePopUp *)[CCBReader load:@"LosePopup" owner:self];
             popup.positionType = CCPositionTypeNormalized;
             popup.position = ccp(0.5, 0.5);
             [self addChild:popup];

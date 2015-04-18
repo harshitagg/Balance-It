@@ -1,13 +1,13 @@
 //
-//  LoosePopUp.m
+//  LosePopUp.m
 //  BalanceIt
 //
 //  Created by Harshit Agarwal on 4/10/15.
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-#import "LoosePopUp.h"
+#import "LosePopUp.h"
 
-@implementation LoosePopUp
+@implementation LosePopUp
 
 @end
