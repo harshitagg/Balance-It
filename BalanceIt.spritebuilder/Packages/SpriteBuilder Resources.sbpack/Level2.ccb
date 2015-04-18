@@ -96,8 +96,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1.6656262874603271</real>
-							<real>1.2609847784042358</real>
+							<real>1.1484003067016602</real>
+							<real>0.920978844165802</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>BalanceItAssets/background.png</string>
+							<string>BalanceItAssets/background-2.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -194,7 +194,7 @@
 						<key>value</key>
 						<array>
 							<real>100</real>
-							<real>100</real>
+							<real>75</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -230,9 +230,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.69803923368453979</real>
-							<real>0.61509144306182861</real>
-							<real>0.20890182256698608</real>
+							<real>0.81568628549575806</real>
+							<real>0.094117648899555206</real>
+							<real>0.058823529630899429</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -245,6 +245,8 @@
 						<real>1</real>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -293,7 +295,7 @@
 						<key>value</key>
 						<array>
 							<real>100</real>
-							<real>100</real>
+							<real>75</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -329,9 +331,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.67450982332229614</real>
-							<real>0.60000002384185791</real>
-							<real>0.18431372940540314</real>
+							<real>0.83921575546264648</real>
+							<real>0.15686275064945221</real>
+							<real>0.066666670143604279</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -348,19 +350,6 @@
 		</array>
 		<key>customClass</key>
 		<string>Level</string>
-		<key>customProperties</key>
-		<array>
-			<dict>
-				<key>name</key>
-				<string>nextLevelName</string>
-				<key>optimized</key>
-				<false/>
-				<key>type</key>
-				<integer>3</integer>
-				<key>value</key>
-				<string>Level2</string>
-			</dict>
-		</array>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -429,8 +418,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

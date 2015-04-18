@@ -49,6 +49,22 @@ static NSString *selectedLevel = @"Level1";
     _spriteCount = 0;
 }
 
+- (void)loadNextLevel {
+    selectedLevel = _loadedLevel.nextLevelName;
+    
+    CCScene *nextScene = nil;
+    
+    if (selectedLevel) {
+        nextScene = [CCBReader loadAsScene:@"Gameplay"];
+    } else {
+        selectedLevel = kFirstLevel;
+        nextScene = [CCBReader loadAsScene:@"MainScene"];
+    }
+    
+    CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
+    [[CCDirector sharedDirector] presentScene:nextScene withTransition:transition];
+}
+
 // called on every touch in this scene
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
     CGPoint touchLocation = [touch locationInNode:self];
