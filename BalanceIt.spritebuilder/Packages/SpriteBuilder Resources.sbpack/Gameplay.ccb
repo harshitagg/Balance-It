@@ -1902,8 +1902,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -4062,9 +4060,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.54901963472366333</real>
-							<real>0.58039218187332153</real>
-							<real>0.090196080505847931</real>
+							<real>0.066666670143604279</real>
+							<real>0.25098040699958801</real>
+							<real>0.074509806931018829</real>
 							<real>1</real>
 						</array>
 					</dict>

@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>BalanceItAssets/background-2.png</string>
+							<string>BalanceItAssets/background-3.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -194,7 +194,7 @@
 						<key>value</key>
 						<array>
 							<real>100</real>
-							<real>75</real>
+							<real>50</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -230,9 +230,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.81568628549575806</real>
+							<real>0.10196078568696976</real>
+							<real>0.5058823823928833</real>
 							<real>0.094117648899555206</real>
-							<real>0.058823529630899429</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -293,7 +293,7 @@
 						<key>value</key>
 						<array>
 							<real>100</real>
-							<real>75</real>
+							<real>50</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -329,9 +329,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.83921575546264648</real>
-							<real>0.15686275064945221</real>
-							<real>0.066666670143604279</real>
+							<real>0.094117656350135803</real>
+							<real>0.5215686559677124</real>
+							<real>0.11372549831867218</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -348,19 +348,6 @@
 		</array>
 		<key>customClass</key>
 		<string>Level</string>
-		<key>customProperties</key>
-		<array>
-			<dict>
-				<key>name</key>
-				<string>nextLevelName</string>
-				<key>optimized</key>
-				<false/>
-				<key>type</key>
-				<integer>3</integer>
-				<key>value</key>
-				<string>Level3</string>
-			</dict>
-		</array>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -429,8 +416,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
