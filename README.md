@@ -84,14 +84,15 @@ he/she has reached in the game.
 ### Week 5
 * Refine levels
 * Level design
-* Level select scene
 * Work on poster
 * Practice pitch
 
 ### Week 6
 * User feedback, testing and polishing
+* Add more objects
+* Polish levels
 
 ## PM notes by Sohil
-* Moved the Level design to next week for designing new levels
-* Work on Poster
-* Practice pitch
+* Removed level selection requirement
+* Add more objects
+* More variation to levels required
