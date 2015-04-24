@@ -36,7 +36,7 @@ static NSString *selectedLevel = @"Level1";
     _timer = 30;
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
-    _objectsArray = [[NSArray alloc] initWithObjects:@"Monster", @"SpaceShip", @"Donut", @"Frog", nil];
+    _objectsArray = [[NSArray alloc] initWithObjects:@"Monster", @"SpaceShip", @"Donut", @"Frog", @"Dog", @"Plane", nil];
     _physicsNode.collisionDelegate = self;
     _loadedLevel = (Level *) [CCBReader load:selectedLevel owner:self];
     [_levelNode addChild:_loadedLevel];
