@@ -93,6 +93,6 @@ he/she has reached in the game.
 * Polish levels
 
 ## PM notes by Sohil
-* Removed level selection requirement
-* Add more objects
 * More variation to levels required
+* Scale objects based on size
+* Add tutorial
