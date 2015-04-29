@@ -9,6 +9,7 @@
 #import "Gameplay.h"
 #import "WinPopup.h"
 #import "LosePopUp.h"
+#import "Sprite.h"
 #import "Level.h"
 
 static NSString * const kFirstLevel = @"Level1";
@@ -70,13 +71,13 @@ static NSString *selectedLevel = @"Level1";
     CGPoint touchLocation = [touch locationInNode:self];
     if (_isScheduled) {
         _spriteCount++;
-        [self launchMonster:touchLocation];
+        [self launchSprite:touchLocation];
     }
 }
 
-- (void)launchMonster:(CGPoint)touchLocation {
+- (void)launchSprite:(CGPoint)touchLocation {
     NSUInteger randomNumber = arc4random_uniform((unsigned int) _objectsArray.count);
-    CCNode* object = [CCBReader load:_objectsArray[randomNumber]];
+    Sprite *object = (Sprite *) [CCBReader load:_objectsArray[randomNumber]];
     object.scale = 0.5;
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     if (touchLocation.x > winSize.width/2) {
