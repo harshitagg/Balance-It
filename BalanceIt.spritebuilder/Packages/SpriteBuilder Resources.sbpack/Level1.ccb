@@ -360,6 +360,16 @@
 				<key>value</key>
 				<string>Level2</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>spriteCount</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>0</integer>
+				<key>value</key>
+				<string>4</string>
+			</dict>
 		</array>
 		<key>displayName</key>
 		<string>CCNode</string>
