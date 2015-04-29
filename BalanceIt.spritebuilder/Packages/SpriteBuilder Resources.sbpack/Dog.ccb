@@ -41,6 +41,19 @@
 		<array/>
 		<key>customClass</key>
 		<string>Sprite</string>
+		<key>customProperties</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>scaleOnScreen</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>1</integer>
+				<key>value</key>
+				<string>0.500000</string>
+			</dict>
+		</array>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -62,9 +75,9 @@
 			<key>collisionType</key>
 			<string></string>
 			<key>cornerRadius</key>
-			<real>21</real>
+			<real>18</real>
 			<key>density</key>
-			<real>2</real>
+			<real>1.5</real>
 			<key>dynamic</key>
 			<true/>
 			<key>elasticity</key>

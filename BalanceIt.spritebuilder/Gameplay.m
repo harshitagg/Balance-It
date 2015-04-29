@@ -78,7 +78,7 @@ static NSString *selectedLevel = @"Level1";
 - (void)launchSprite:(CGPoint)touchLocation {
     NSUInteger randomNumber = arc4random_uniform((unsigned int) _objectsArray.count);
     Sprite *object = (Sprite *) [CCBReader load:_objectsArray[randomNumber]];
-    object.scale = 0.5;
+    object.scale = object.scaleOnScreen;
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     if (touchLocation.x > winSize.width/2) {
         object.position = _rightLaunchNode.position;

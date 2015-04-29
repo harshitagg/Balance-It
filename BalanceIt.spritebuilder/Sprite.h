@@ -10,4 +10,6 @@
 
 @interface Sprite : CCSprite
 
+@property (nonatomic, assign) float scaleOnScreen;
+
 @end
