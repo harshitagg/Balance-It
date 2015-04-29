@@ -96,7 +96,6 @@
 		BC5399DC1A44DCC90063F482 /* JavaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D71A44DCC90063F482 /* JavaKit.framework */; };
 		EE4B76491AE1DB84008C19A4 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4B76481AE1DB84008C19A4 /* Level.m */; };
 		EE52227C1A9AB1E40092E8B2 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = EE52227B1A9AB1E40092E8B2 /* Gameplay.m */; };
-		EE5222801A9AB4510092E8B2 /* Monster.m in Sources */ = {isa = PBXBuildFile; fileRef = EE52227F1A9AB4510092E8B2 /* Monster.m */; };
 		EE61AB841AD86CFA006B85A1 /* WinPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61AB831AD86CFA006B85A1 /* WinPopup.m */; };
 		EE61AB881AD87C91006B85A1 /* LosePopUp.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61AB871AD87C91006B85A1 /* LosePopUp.m */; };
 		EEBA2F871AA25E7800EFE84C /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA2F861AA25E7800EFE84C /* Sprite.m */; };
@@ -221,8 +220,6 @@
 		EE4B76481AE1DB84008C19A4 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
 		EE52227A1A9AB1E40092E8B2 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gameplay.h; sourceTree = "<group>"; };
 		EE52227B1A9AB1E40092E8B2 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gameplay.m; sourceTree = "<group>"; };
-		EE52227E1A9AB4510092E8B2 /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
-		EE52227F1A9AB4510092E8B2 /* Monster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monster.m; sourceTree = "<group>"; };
 		EE61AB821AD86CFA006B85A1 /* WinPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinPopup.h; sourceTree = "<group>"; };
 		EE61AB831AD86CFA006B85A1 /* WinPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinPopup.m; sourceTree = "<group>"; };
 		EE61AB861AD87C91006B85A1 /* LosePopUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LosePopUp.h; sourceTree = "<group>"; };
@@ -461,8 +458,6 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				EE52227E1A9AB4510092E8B2 /* Monster.h */,
-				EE52227F1A9AB4510092E8B2 /* Monster.m */,
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
@@ -864,7 +859,6 @@
 				EE61AB841AD86CFA006B85A1 /* WinPopup.m in Sources */,
 				EEBA2F871AA25E7800EFE84C /* Sprite.m in Sources */,
 				EEBA2F941AA26F4E00EFE84C /* MidWall.m in Sources */,
-				EE5222801A9AB4510092E8B2 /* Monster.m in Sources */,
 				EE4B76491AE1DB84008C19A4 /* Level.m in Sources */,
 				EE52227C1A9AB1E40092E8B2 /* Gameplay.m in Sources */,
 				EE61AB881AD87C91006B85A1 /* LosePopUp.m in Sources */,
