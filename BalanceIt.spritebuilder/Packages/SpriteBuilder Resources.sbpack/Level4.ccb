@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>BalanceItAssets/background-4.png</string>
+							<string>BalanceItAssets/background-3.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -194,7 +194,7 @@
 						<key>value</key>
 						<array>
 							<real>100</real>
-							<real>50</real>
+							<real>35</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -230,9 +230,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.96470588445663452</real>
-							<real>0.0</real>
-							<real>0.92156863212585449</real>
+							<real>0.10196078568696976</real>
+							<real>0.5058823823928833</real>
+							<real>0.094117648899555206</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -293,7 +293,7 @@
 						<key>value</key>
 						<array>
 							<real>100</real>
-							<real>50</real>
+							<real>35</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -329,9 +329,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.9803922176361084</real>
-							<real>0.015686275437474251</real>
-							<real>0.92941182851791382</real>
+							<real>0.094117656350135803</real>
+							<real>0.5215686559677124</real>
+							<real>0.11372549831867218</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -379,16 +379,6 @@
 				<integer>0</integer>
 				<key>value</key>
 				<string>50</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>nextLevelName</string>
-				<key>optimized</key>
-				<false/>
-				<key>type</key>
-				<integer>3</integer>
-				<key>value</key>
-				<string>Level4</string>
 			</dict>
 		</array>
 		<key>displayName</key>
