@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>5</integer>
+	<integer>6</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -41,15 +41,15 @@
 		<array>
 			<dict>
 				<key>UUID</key>
-				<integer>3</integer>
+				<integer>5</integer>
 				<key>baseClass</key>
-				<string>CCNodeColor</string>
+				<string>CCSprite</string>
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCNodeColor</string>
+				<string>red_panel</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -80,19 +80,6 @@
 					</dict>
 					<dict>
 						<key>name</key>
-						<string>contentSize</string>
-						<key>type</key>
-						<string>Size</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<integer>2</integer>
-							<integer>2</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
 						<string>anchorPoint</string>
 						<key>type</key>
 						<string>Point</string>
@@ -109,10 +96,32 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
+							<real>7.9816136360168457</real>
+							<real>8.0035305023193359</real>
 							<false/>
 							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>spriteFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string>BalanceItAssets/red_panel.png</string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>normalMapSpriteFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string></string>
 						</array>
 					</dict>
 					<dict>
@@ -122,19 +131,19 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.96078437566757202</real>
-							<real>0.3333333432674408</real>
-							<real>0.023529414087533951</real>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
 							<real>1</real>
 						</array>
 					</dict>
 					<dict>
 						<key>name</key>
-						<string>opacity</string>
+						<string>effects</string>
 						<key>type</key>
-						<string>Float</string>
+						<string>EffectControl</string>
 						<key>value</key>
-						<real>1</real>
+						<array/>
 					</dict>
 				</array>
 			</dict>
@@ -265,7 +274,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>BalanceItAssets/blue_button04.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -276,7 +285,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonHighlighted.png</string>
+							<string>BalanceItAssets/blue_button03.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -394,10 +403,10 @@
 						<string>Color4</string>
 						<key>value</key>
 						<array>
-							<real>255</real>
-							<real>255</real>
-							<real>255</real>
-							<real>255</real>
+							<real>0.89019608497619629</real>
+							<real>0.37647059559822083</real>
+							<real>0.078431375324726105</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -544,7 +553,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>MarkerFelt-Thin</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -601,9 +610,9 @@
 						<string>Color4</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
-							<real>1</real>
+							<real>0.44705885648727417</real>
+							<real>0.08235294371843338</real>
+							<real>0.38431376218795776</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -670,8 +679,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -743,7 +750,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>You Lose!</string>
+							<string>You Lose :(</string>
 							<false/>
 						</array>
 					</dict>
@@ -753,7 +760,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>MarkerFelt-Thin</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -810,9 +817,9 @@
 						<string>Color4</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
-							<real>1</real>
+							<real>0.47058826684951782</real>
+							<real>0.73725491762161255</real>
+							<real>0.08235294371843338</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -847,10 +854,10 @@
 						<string>Color4</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>0.99215692281723022</real>
+							<real>0.14509804546833038</real>
+							<real>0.011764707043766975</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -860,7 +867,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
+							<real>8</real>
 							<integer>0</integer>
 						</array>
 					</dict>
