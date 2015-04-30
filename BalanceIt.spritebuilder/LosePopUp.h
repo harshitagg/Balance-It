@@ -10,4 +10,6 @@
 
 @interface LosePopUp : CCNode
 
+- (void)setLossReason:(NSString *)reason;
+
 @end

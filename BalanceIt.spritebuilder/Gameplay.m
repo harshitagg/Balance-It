@@ -130,6 +130,11 @@ static NSString *selectedLevel = @"Level1";
             LosePopUp *popup = (LosePopUp *)[CCBReader load:@"LosePopup" owner:self];
             popup.positionType = CCPositionTypeNormalized;
             popup.position = ccp(0.5, 0.5);
+            if (_spriteCount < _loadedLevel.minScore) {
+                [popup setLossReason: @"Failed to meet target score"];
+            } else {
+                [popup setLossReason: @"Failed to achieve balance"];
+            }
             [self addChild:popup];
         }
     }
@@ -146,7 +151,9 @@ static NSString *selectedLevel = @"Level1";
 }
 
 - (void)spriteRemoved:(CCNode *)sprite {
+    _spriteCount--;
     [sprite removeFromParent];
+    [_scoreLabel setString:[NSString stringWithFormat:@"%d", _spriteCount]];
 }
 
 - (void)retry {

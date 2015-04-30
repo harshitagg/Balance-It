@@ -8,6 +8,12 @@
 
 #import "LosePopUp.h"
 
-@implementation LosePopUp
+@implementation LosePopUp {
+    CCLabelTTF *_lossReasonLabel;
+}
+
+- (void)setLossReason:(NSString *)reason {
+    [_lossReasonLabel setString:[NSString stringWithFormat:@"%@", reason]];
+}
 
 @end
