@@ -12,6 +12,8 @@
 
 @property (nonatomic, copy) NSString *nextLevelName;
 @property (nonatomic, assign) int spriteCount;
+@property (nonatomic, assign) int timeLimit;
+@property (nonatomic, assign) int minScore;
 
 - (CCNode *)getRightLevelMarker;
 

@@ -360,6 +360,26 @@
 				<key>value</key>
 				<string>6</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>timeLimit</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>0</integer>
+				<key>value</key>
+				<string>60</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>minScore</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>0</integer>
+				<key>value</key>
+				<string>50</string>
+			</dict>
 		</array>
 		<key>displayName</key>
 		<string>CCNode</string>

@@ -23,6 +23,8 @@ static NSString *selectedLevel = @"Level1";
     CCNode *_lever;
     
     CCLabelTTF *_timerLabel;
+    CCLabelTTF *_scoreLabel;
+    CCLabelTTF *_targetScoreLabel;
     int _timer;
     int _spriteCount;
     SEL _decrementSelector;
@@ -34,7 +36,6 @@ static NSString *selectedLevel = @"Level1";
 
 // is called when CCB file has completed loading
 - (void)didLoadFromCCB {
-    _timer = 30;
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     _objectsArray = [[NSArray alloc] initWithObjects:@"Monster", @"SpaceShip", @"Donut", @"Frog", @"Dog", @"Plane", nil];
@@ -45,9 +46,12 @@ static NSString *selectedLevel = @"Level1";
     
     _decrementSelector = @selector(decrement);
     [self schedule:_decrementSelector interval:1.0];
+    _timer = _loadedLevel.timeLimit;
     [_timerLabel setString:[NSString stringWithFormat:@"%d", _timer]];
     _isScheduled = true;
     _spriteCount = 0;
+    [_scoreLabel setString:[NSString stringWithFormat:@"%d", _spriteCount]];
+    [_targetScoreLabel setString:[NSString stringWithFormat:@"%d", _loadedLevel.minScore]];
 }
 
 - (void)loadNextLevel {
@@ -72,6 +76,7 @@ static NSString *selectedLevel = @"Level1";
     if (_isScheduled) {
         _spriteCount++;
         [self launchSprite:touchLocation];
+        [_scoreLabel setString:[NSString stringWithFormat:@"%d", _spriteCount]];
     }
 }
 
@@ -113,7 +118,7 @@ static NSString *selectedLevel = @"Level1";
         bottomCornerRightMarker = [_rightLevelMarker convertToWorldSpaceAR:bottomCornerRightMarker];
 
         [self setPaused:TRUE];
-        if ((leverCorner.y - 10) >= bottomCornerRightMarker.y && (leverCorner.y + 10) <= topCornerRightMarker.y && _spriteCount > 1) {
+        if ((leverCorner.y - 10) >= bottomCornerRightMarker.y && (leverCorner.y + 10) <= topCornerRightMarker.y && _spriteCount >= _loadedLevel.minScore) {
             CCLOG(@"You Win!! :)");
             WinPopup *popup = (WinPopup *)[CCBReader load:@"WinPopup" owner:self];
             popup.positionType = CCPositionTypeNormalized;
