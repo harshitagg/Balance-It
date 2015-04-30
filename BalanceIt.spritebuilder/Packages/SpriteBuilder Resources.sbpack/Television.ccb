@@ -51,7 +51,7 @@
 				<key>type</key>
 				<integer>1</integer>
 				<key>value</key>
-				<string>0.300000</string>
+				<string>0.150000</string>
 			</dict>
 		</array>
 		<key>displayName</key>
@@ -67,7 +67,7 @@
 			<key>allowsRotation</key>
 			<true/>
 			<key>bodyShape</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>collisionCategories</key>
 			<array/>
 			<key>collisionMask</key>
@@ -75,9 +75,9 @@
 			<key>collisionType</key>
 			<string></string>
 			<key>cornerRadius</key>
-			<real>28</real>
+			<real>0.0</real>
 			<key>density</key>
-			<real>3</real>
+			<real>1.5</real>
 			<key>dynamic</key>
 			<true/>
 			<key>elasticity</key>
@@ -87,12 +87,43 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>62.5</real>
-					<real>62.5</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<array>
+					<real>0.0</real>
+					<real>117</real>
+				</array>
+				<array>
+					<real>113</real>
+					<real>117</real>
+				</array>
+				<array>
+					<real>113</real>
+					<real>0.0</real>
 				</array>
 			</array>
 			<key>polygons</key>
-			<array/>
+			<array>
+				<array>
+					<array>
+						<real>113</real>
+						<real>0.0</real>
+					</array>
+					<array>
+						<real>113</real>
+						<real>117</real>
+					</array>
+					<array>
+						<real>0.0</real>
+						<real>117</real>
+					</array>
+					<array>
+						<real>0.0</real>
+						<real>0.0</real>
+					</array>
+				</array>
+			</array>
 		</dict>
 		<key>properties</key>
 		<array>
@@ -150,7 +181,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>BalanceItAssets/character_monsters/Type 2.png</string>
+					<string>BalanceItAssets/tv.png</string>
 				</array>
 			</dict>
 			<dict>

@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -35,6 +35,58 @@
 	<false/>
 	<key>nodeGraph</key>
 	<dict>
+		<key>animatedProperties</key>
+		<dict>
+			<key>0</key>
+			<dict>
+				<key>spriteFrame</key>
+				<dict>
+					<key>keyframes</key>
+					<array>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>0</integer>
+							</dict>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>time</key>
+							<real>0.0</real>
+							<key>type</key>
+							<integer>7</integer>
+							<key>value</key>
+							<array>
+								<string>BalanceItAssets/fly-1.png</string>
+								<string>Use regular file</string>
+							</array>
+						</dict>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>0</integer>
+							</dict>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>time</key>
+							<real>0.033333335071802139</real>
+							<key>type</key>
+							<integer>7</integer>
+							<key>value</key>
+							<array>
+								<string>BalanceItAssets/fly-2.png</string>
+								<string>Use regular file</string>
+							</array>
+						</dict>
+					</array>
+					<key>name</key>
+					<string>spriteFrame</string>
+					<key>type</key>
+					<integer>7</integer>
+				</dict>
+			</dict>
+		</dict>
 		<key>baseClass</key>
 		<string>CCSprite</string>
 		<key>children</key>
@@ -51,7 +103,7 @@
 				<key>type</key>
 				<integer>1</integer>
 				<key>value</key>
-				<string>0.300000</string>
+				<string>0.400000</string>
 			</dict>
 		</array>
 		<key>displayName</key>
@@ -75,9 +127,9 @@
 			<key>collisionType</key>
 			<string></string>
 			<key>cornerRadius</key>
-			<real>28</real>
+			<real>20</real>
 			<key>density</key>
-			<real>3</real>
+			<real>0.5</real>
 			<key>dynamic</key>
 			<true/>
 			<key>elasticity</key>
@@ -87,8 +139,8 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>62.5</real>
-					<real>62.5</real>
+					<real>23</real>
+					<real>15.5</real>
 				</array>
 			</array>
 			<key>polygons</key>
@@ -143,6 +195,11 @@
 				</array>
 			</dict>
 			<dict>
+				<key>baseValue</key>
+				<array>
+					<string></string>
+					<string>Use regular file</string>
+				</array>
 				<key>name</key>
 				<string>spriteFrame</string>
 				<key>type</key>
@@ -150,7 +207,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>BalanceItAssets/character_monsters/Type 2.png</string>
+					<string>BalanceItAssets/fly-2.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -187,6 +244,8 @@
 			</dict>
 		</array>
 		<key>selected</key>
+		<true/>
+		<key>seqExpanded</key>
 		<true/>
 	</dict>
 	<key>notes</key>
@@ -235,9 +294,9 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
-			<real>10</real>
+			<real>0.066666670143604279</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
