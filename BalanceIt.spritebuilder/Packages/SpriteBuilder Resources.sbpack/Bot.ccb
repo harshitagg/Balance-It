@@ -57,7 +57,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>BalanceItAssets/character_monsters/Type 1.png</string>
+								<string>BalanceItAssets/character_golem/walk down-1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -75,7 +75,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>BalanceItAssets/character_monsters/Type 2.png</string>
+								<string>BalanceItAssets/character_golem/walk down-2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -93,7 +93,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>BalanceItAssets/character_monsters/Type 3.png</string>
+								<string>BalanceItAssets/character_golem/walk down-3.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -111,7 +111,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>BalanceItAssets/character_monsters/Type 4.png</string>
+								<string>BalanceItAssets/character_golem/walk down-4.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -129,7 +129,43 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>BalanceItAssets/character_monsters/Type 5.png</string>
+								<string>BalanceItAssets/character_golem/walk down-5.png</string>
+								<string>Use regular file</string>
+							</array>
+						</dict>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>0</integer>
+							</dict>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>time</key>
+							<real>0.1666666716337204</real>
+							<key>type</key>
+							<integer>7</integer>
+							<key>value</key>
+							<array>
+								<string>BalanceItAssets/character_golem/walk down-6.png</string>
+								<string>Use regular file</string>
+							</array>
+						</dict>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>0</integer>
+							</dict>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>time</key>
+							<real>0.20000000298023224</real>
+							<key>type</key>
+							<integer>7</integer>
+							<key>value</key>
+							<array>
+								<string>BalanceItAssets/character_golem/walk down-7.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -157,7 +193,7 @@
 				<key>type</key>
 				<integer>1</integer>
 				<key>value</key>
-				<string>0.300000</string>
+				<string>0.400000</string>
 			</dict>
 		</array>
 		<key>displayName</key>
@@ -189,12 +225,12 @@
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
-			<real>0.80000001192092896</real>
+			<real>0.5</real>
 			<key>points</key>
 			<array>
 				<array>
-					<real>62.5</real>
-					<real>62.5</real>
+					<real>32</real>
+					<real>32</real>
 				</array>
 			</array>
 			<key>polygons</key>
@@ -251,7 +287,7 @@
 			<dict>
 				<key>baseValue</key>
 				<array>
-					<string>BalanceItAssets/character_monsters/Type 2.png</string>
+					<string></string>
 					<string>Use regular file</string>
 				</array>
 				<key>name</key>
@@ -261,7 +297,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>BalanceItAssets/character_monsters/Type 5.png</string>
+					<string>BalanceItAssets/character_golem/walk down-7.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -297,6 +333,8 @@
 				<array/>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 		<key>seqExpanded</key>
 		<true/>
 	</dict>
@@ -348,13 +386,13 @@
 			<key>chainedSequenceId</key>
 			<integer>0</integer>
 			<key>length</key>
-			<real>0.1666666716337204</real>
+			<real>0.23333333432674408</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.066666670143604279</real>
+			<real>0.1666666716337204</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
