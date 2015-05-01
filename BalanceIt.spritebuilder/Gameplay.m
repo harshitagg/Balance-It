@@ -14,6 +14,7 @@
 
 static NSString * const kFirstLevel = @"Level1";
 static NSString *selectedLevel = @"Level1";
+static BOOL isTutorialShown = false;
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
@@ -29,7 +30,11 @@ static NSString *selectedLevel = @"Level1";
     int _spriteCount;
     SEL _decrementSelector;
     BOOL _isScheduled;
-    
+
+    CCScene *_firstTutorial;
+    CCScene *_secondTutorial;
+    CCScene *_thirdTutorial;
+
     CCNode *_levelNode;
     Level *_loadedLevel;
 }
@@ -73,6 +78,32 @@ static NSString *selectedLevel = @"Level1";
 // called on every touch in this scene
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
     CGPoint touchLocation = [touch locationInNode:self];
+
+    if (!isTutorialShown) {
+        [self setPaused:TRUE];
+        _firstTutorial = [CCBReader loadAsScene:@"Tutorial"];
+        [self addChild:_firstTutorial];
+        isTutorialShown = true;
+        return;
+    } else if (_firstTutorial != nil) {
+        [self removeChild:_firstTutorial];
+        _secondTutorial = [CCBReader loadAsScene:@"SecondTutorial"];
+        [self addChild:_secondTutorial];
+        _firstTutorial = nil;
+        return;
+    } else if (_secondTutorial != nil) {
+        [self removeChild:_secondTutorial];
+        _thirdTutorial = [CCBReader loadAsScene:@"ThirdTutorial"];
+        [self addChild:_thirdTutorial];
+        _secondTutorial = nil;
+        return;
+    } else if (_thirdTutorial != nil) {
+        [self removeChild:_thirdTutorial];
+        [self setPaused:false];
+        _thirdTutorial = nil;
+        return;
+    }
+
     if (_isScheduled) {
         _spriteCount++;
         [self launchSprite:touchLocation];
@@ -144,12 +175,6 @@ static NSString *selectedLevel = @"Level1";
             [self addChild:popup];
         }
     }
-}
-
-- (BOOL)ccPhysicsCollisionPreSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
-    //nodeA.physicsBody.velocity = ccp(0,0);
-    //nodeB.physicsBody.elasticity = 0;
-    return true;
 }
 
 - (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair sprite:(CCNode *)nodeA wall:(CCNode *)nodeB {
