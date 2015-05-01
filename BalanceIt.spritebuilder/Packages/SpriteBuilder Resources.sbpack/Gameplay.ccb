@@ -1594,8 +1594,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>234</real>
-						<real>192</real>
+						<real>279.375</real>
+						<real>193.0234375</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -1607,7 +1607,7 @@
 					<key>type</key>
 					<string>NodeReference</string>
 					<key>value</key>
-					<integer>20</integer>
+					<integer>48</integer>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -1615,7 +1615,7 @@
 					<key>type</key>
 					<string>NodeReference</string>
 					<key>value</key>
-					<integer>48</integer>
+					<integer>20</integer>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -1632,8 +1632,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>3.776618480682373</real>
-						<real>109.58990478515625</real>
+						<real>-4.625</real>
+						<real>6.0234375</real>
 					</array>
 				</dict>
 				<dict>
@@ -1643,8 +1643,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>3</real>
-						<real>-11</real>
+						<real>11.922968864440918</real>
+						<real>78.993316650390625</real>
 					</array>
 				</dict>
 				<dict>
@@ -1676,7 +1676,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>55.362442016601562</real>
+						<real>52.938056945800781</real>
 						<false/>
 					</array>
 				</dict>
@@ -1687,7 +1687,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>55.362442016601562</real>
+						<real>52.938056945800781</real>
 						<false/>
 					</array>
 				</dict>
@@ -1717,8 +1717,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>288</real>
-						<real>205</real>
+						<real>295.6640625</real>
+						<real>192.859375</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -1755,8 +1755,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>4</real>
-						<real>18</real>
+						<real>11.6640625</real>
+						<real>5.859375</real>
 					</array>
 				</dict>
 				<dict>
@@ -1766,8 +1766,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>72.015007019042969</real>
-						<real>-102.16721343994141</real>
+						<real>71.753524780273438</real>
+						<real>-77.180389404296875</real>
 					</array>
 				</dict>
 				<dict>
@@ -1799,7 +1799,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>59.093135833740234</real>
+						<real>58.429103851318359</real>
 						<false/>
 					</array>
 				</dict>
@@ -1810,7 +1810,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>59.093135833740234</real>
+						<real>58.429103851318359</real>
 						<false/>
 					</array>
 				</dict>

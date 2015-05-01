@@ -42,7 +42,7 @@ static NSString *selectedLevel = @"Level1";
     _physicsNode.collisionDelegate = self;
     _loadedLevel = (Level *) [CCBReader load:selectedLevel owner:self];
     [_levelNode addChild:_loadedLevel];
-   // _physicsNode.debugDraw = YES;
+    //_physicsNode.debugDraw = YES;
     
     _decrementSelector = @selector(decrement);
     [self schedule:_decrementSelector interval:1.0];
@@ -94,11 +94,17 @@ static NSString *selectedLevel = @"Level1";
     
     // add the penguin to the physicsNode of this scene (because it has physics enabled)
     [_physicsNode addChild:object];
-    
+
     // manually create & apply a force to launch the penguin
     CGPoint launchDirection = ccp(0, 0);
-    CGPoint force = ccpMult(launchDirection, 0);
+    CGPoint force = ccpMult(launchDirection, 10);
     [object.physicsBody applyForce:force];
+
+    CCParticleSystem *explosion = (CCParticleSystem *)[CCBReader load:@"SpriteEntry"];
+    // make the particle effect clean itself up, once it is completed
+    explosion.autoRemoveOnFinish = TRUE;
+    explosion.position = object.position;
+    [self addChild:explosion];
 }
 
 - (void)update:(CCTime)delta {
@@ -152,6 +158,12 @@ static NSString *selectedLevel = @"Level1";
 
 - (void)spriteRemoved:(CCNode *)sprite {
     _spriteCount--;
+
+    CCParticleSystem *explosion = (CCParticleSystem *)[CCBReader load:@"SpriteExplosion"];
+    explosion.autoRemoveOnFinish = TRUE;
+    explosion.position = sprite.position;
+    [sprite.parent addChild:explosion];
+
     [sprite removeFromParent];
     [_scoreLabel setString:[NSString stringWithFormat:@"%d", _spriteCount]];
 }

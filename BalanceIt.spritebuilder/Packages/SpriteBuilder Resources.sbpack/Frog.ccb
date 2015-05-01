@@ -67,7 +67,7 @@
 			<key>allowsRotation</key>
 			<true/>
 			<key>bodyShape</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>collisionCategories</key>
 			<array/>
 			<key>collisionMask</key>
@@ -75,7 +75,7 @@
 			<key>collisionType</key>
 			<string></string>
 			<key>cornerRadius</key>
-			<real>0.0</real>
+			<real>19</real>
 			<key>density</key>
 			<real>0.5</real>
 			<key>dynamic</key>
@@ -87,43 +87,12 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<array>
-					<real>0.0</real>
-					<real>27</real>
-				</array>
-				<array>
-					<real>48</real>
-					<real>27</real>
-				</array>
-				<array>
-					<real>48</real>
-					<real>0.0</real>
+					<real>24</real>
+					<real>13.5</real>
 				</array>
 			</array>
 			<key>polygons</key>
-			<array>
-				<array>
-					<array>
-						<real>48</real>
-						<real>0.0</real>
-					</array>
-					<array>
-						<real>48</real>
-						<real>27</real>
-					</array>
-					<array>
-						<real>0.0</real>
-						<real>27</real>
-					</array>
-					<array>
-						<real>0.0</real>
-						<real>0.0</real>
-					</array>
-				</array>
-			</array>
+			<array/>
 		</dict>
 		<key>properties</key>
 		<array>
