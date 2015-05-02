@@ -34,6 +34,7 @@ static BOOL isTutorialShown = false;
     CCScene *_firstTutorial;
     CCScene *_secondTutorial;
     CCScene *_thirdTutorial;
+    BOOL _pauseTimer;
 
     CCNode *_levelNode;
     Level *_loadedLevel;
@@ -41,6 +42,7 @@ static BOOL isTutorialShown = false;
 
 // is called when CCB file has completed loading
 - (void)didLoadFromCCB {
+    _pauseTimer = false;
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     _objectsArray = [[NSArray alloc] initWithObjects:@"Bird", @"Tank", @"Television", @"Plane", @"Tree", @"House", @"Monster", @"SpaceShip", @"Bot", @"Frog", @"Dog", @"Donut", nil];
@@ -57,6 +59,13 @@ static BOOL isTutorialShown = false;
     _spriteCount = 0;
     [_scoreLabel setString:[NSString stringWithFormat:@"%d", _spriteCount]];
     [_targetScoreLabel setString:[NSString stringWithFormat:@"%d", _loadedLevel.minScore]];
+
+    if (!isTutorialShown) {
+        _firstTutorial = [CCBReader loadAsScene:@"Tutorial"];
+        [self addChild:_firstTutorial];
+        isTutorialShown = true;
+        _pauseTimer = true;
+    }
 }
 
 - (void)loadNextLevel {
@@ -79,13 +88,7 @@ static BOOL isTutorialShown = false;
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
     CGPoint touchLocation = [touch locationInNode:self];
 
-    if (!isTutorialShown) {
-        [self setPaused:TRUE];
-        _firstTutorial = [CCBReader loadAsScene:@"Tutorial"];
-        [self addChild:_firstTutorial];
-        isTutorialShown = true;
-        return;
-    } else if (_firstTutorial != nil) {
+    if (_firstTutorial != nil) {
         [self removeChild:_firstTutorial];
         _secondTutorial = [CCBReader loadAsScene:@"SecondTutorial"];
         [self addChild:_secondTutorial];
@@ -99,8 +102,8 @@ static BOOL isTutorialShown = false;
         return;
     } else if (_thirdTutorial != nil) {
         [self removeChild:_thirdTutorial];
-        [self setPaused:false];
         _thirdTutorial = nil;
+        _pauseTimer = false;
         return;
     }
 
@@ -199,7 +202,9 @@ static BOOL isTutorialShown = false;
 }
 
 - (void)decrement {
-    [_timerLabel setString:[NSString stringWithFormat:@"%d", _timer--]];
+    if (!_pauseTimer) {
+        [_timerLabel setString:[NSString stringWithFormat:@"%d", _timer--]];
+    }
 }
 
 @end

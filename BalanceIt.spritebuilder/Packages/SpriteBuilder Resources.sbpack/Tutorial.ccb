@@ -125,7 +125,7 @@
 							<real>0.086274512112140656</real>
 							<real>0.40392160415649414</real>
 							<real>0.41568630933761597</real>
-							<real>0.40000000596046448</real>
+							<real>0.5</real>
 						</array>
 					</dict>
 					<dict>
@@ -134,9 +134,11 @@
 						<key>type</key>
 						<string>Float</string>
 						<key>value</key>
-						<real>0.40000000596046448</real>
+						<real>0.5</real>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -562,8 +564,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
