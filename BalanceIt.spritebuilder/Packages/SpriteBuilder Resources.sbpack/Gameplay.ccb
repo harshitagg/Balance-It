@@ -3860,8 +3860,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -4034,7 +4032,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>MarkerFelt-Wide</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -4043,7 +4041,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>12</real>
+							<real>14</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -4062,9 +4060,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.7607843279838562</real>
-							<real>0.16470588743686676</real>
-							<real>0.18823529779911041</real>
+							<real>0.70588237047195435</real>
+							<real>0.42352941632270813</real>
+							<real>0.074509806931018829</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -4120,7 +4118,7 @@
 							<real>0.0</real>
 							<real>0.0</real>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -4254,7 +4252,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>MarkerFelt-Wide</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -4263,7 +4261,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>12</real>
+							<real>14</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -4340,7 +4338,7 @@
 							<real>0.0</real>
 							<real>0.0</real>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -4474,7 +4472,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>MarkerFelt-Wide</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -4483,7 +4481,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>12</real>
+							<real>14</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -4502,9 +4500,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.7607843279838562</real>
-							<real>0.16470588743686676</real>
-							<real>0.18823529779911041</real>
+							<real>0.73333334922790527</real>
+							<real>0.45507329702377319</real>
+							<real>0.091577313840389252</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -4560,7 +4558,7 @@
 							<real>0.0</real>
 							<real>0.0</real>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -4695,7 +4693,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>MarkerFelt-Wide</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -4704,7 +4702,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>12</real>
+							<real>14</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -4781,7 +4779,7 @@
 							<real>0.0</real>
 							<real>0.0</real>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -4915,7 +4913,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>MarkerFelt-Wide</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -4924,7 +4922,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>12</real>
+							<real>14</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -4943,8 +4941,8 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.066666670143604279</real>
-							<real>0.25098040699958801</real>
+							<real>0.70588237047195435</real>
+							<real>0.42352941632270813</real>
 							<real>0.074509806931018829</real>
 							<real>1</real>
 						</array>
@@ -5001,7 +4999,7 @@
 							<real>0.0</real>
 							<real>0.0</real>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -5135,7 +5133,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>MarkerFelt-Wide</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -5144,7 +5142,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>12</real>
+							<real>14</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -5221,7 +5219,7 @@
 							<real>0.0</real>
 							<real>0.0</real>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
