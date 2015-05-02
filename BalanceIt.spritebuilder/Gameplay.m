@@ -26,6 +26,7 @@ static BOOL isTutorialShown = false;
     CCLabelTTF *_timerLabel;
     CCLabelTTF *_scoreLabel;
     CCLabelTTF *_targetScoreLabel;
+    CCLabelTTF *_levelLabel;
     int _timer;
     int _spriteCount;
     SEL _decrementSelector;
@@ -59,6 +60,7 @@ static BOOL isTutorialShown = false;
     _spriteCount = 0;
     [_scoreLabel setString:[NSString stringWithFormat:@"%d", _spriteCount]];
     [_targetScoreLabel setString:[NSString stringWithFormat:@"%d", _loadedLevel.minScore]];
+    [_levelLabel setString:[NSString stringWithFormat:@"%d", _loadedLevel.levelNumber]];
 
     if (!isTutorialShown) {
         _firstTutorial = [CCBReader loadAsScene:@"Tutorial"];

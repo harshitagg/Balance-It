@@ -368,7 +368,7 @@
 				<key>type</key>
 				<integer>0</integer>
 				<key>value</key>
-				<string>60</string>
+				<string>75</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -389,6 +389,16 @@
 				<integer>3</integer>
 				<key>value</key>
 				<string>Level4</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>levelNumber</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>0</integer>
+				<key>value</key>
+				<string>3</string>
 			</dict>
 		</array>
 		<key>displayName</key>
