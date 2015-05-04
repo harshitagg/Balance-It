@@ -96,3 +96,8 @@ he/she has reached in the game.
 * More variation to levels required
 * Scale objects based on size
 * Add tutorial
+
+## Image credits
+* [Balance on main screen](https://cdn4.iconfinder.com/data/icons/STROKE/accounting/png/400/balance.png)
+* [Reset button](http://www.clker.com/cliparts/3/e/0/a/11954452561216891203jean_victor_balin_reset.svg.hi.png)
+* [Background level 1](http://freakyframes.deviantart.com/art/Blend-wallpaper-HD-66608334)
